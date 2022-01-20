@@ -5,6 +5,7 @@ const cors = require("cors")
 const app = express()
 
 app.use(cors())
+
 app.use(express.json())
 
 app.get("/status", (req, res) => res.send({ status: "༼ つ ◕_◕ ༽つ" }))
